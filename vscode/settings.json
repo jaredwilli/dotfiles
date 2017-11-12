@@ -1,0 +1,265 @@
+{
+    "debug.allowBreakpointsEverywhere": true,
+    "debug.inlineValues": true,
+
+    "files.autoSave": "onFocusChange",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+	"files.associations": {
+        "*.sh": "shellscript",
+        "*.php": "php",
+        ".ackrc": "shellscript",
+        ".aliases": "shellscript",
+        ".brew": "shellscript",
+        ".bash_profile": "shellscript",
+        ".bash_prompt": "shellscript",
+        ".bashrc": "shellscript",
+        ".CFUserTextEncoding": "shellscript",
+        ".curlrc": "shellscript",
+        ".editorconfig": "shellscript",
+        ".exports": "shellscript",
+        ".extra": "shellscript",
+        ".functions": "shellscript",
+        ".gdbinit": "shellscript",
+        ".gitattributes": "shellscript",
+        ".gitconfig": "shellscript",
+        ".gitignore": "shellscript",
+        ".gvimrc": "shellscript",
+        ".hgignore": "shellscript",
+        ".hushlogin": "shellscript",
+        ".inputrc": "shellscript",
+        ".mkshrc": "shellscript",
+        ".macos": "shellscript",
+        ".node_repl_history": "shellscript",
+        ".osx": "shellscript",
+        ".profile": "shellscript",
+        ".screenrc": "shellscript",
+        ".tmux.conf": "shellscript",
+        ".viminfo": "shellscript",
+        ".vimrc": "shellscript",
+        ".wgetrc": "shellscript",
+        ".yarnrc": "shellscript",
+        ".zsh": "shellscript",
+        ".zlogin": "shellscript"
+	},
+
+    "editor.cursorStyle": "line-thin",
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 80,
+    "editor.wrappingIndent": "indent",
+    "editor.minimap.enabled": true,
+    "editor.snippetSuggestions": "top",
+    "editor.tabCompletion": true,
+
+    "editor.fontSize": 14,
+    "window.zoomLevel": 0,
+    "workbench.commandPalette.history": 0,
+    "css.lint.duplicateProperties": "warning",
+    "html.format.endWithNewline": true,
+
+    // Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the files.exclude setting.
+    "search.exclude": {
+
+    },
+
+    "window.restoreWindows": "all",
+    "workbench.fontAliasing": "default",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.commandPalette.preserveInput": true,
+    "workbench.settings.openDefaultSettings": true,
+    "workbench.iconTheme": "material-icon-theme",
+
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
+    "prettier.useTabs": true,
+    "prettier.jsxBracketSameLine": true,
+    "prettier.jsonEnable": [
+        "json",
+        "javascript",
+        "sass",
+        "css",
+        "html"
+    ],
+
+    "workbench.colorTheme": "Blackboard",
+
+    "workbench.statusBar.visible": true,
+
+    "[javascriptreact]": {
+
+    },
+    "javascript.validate.enable": false,
+
+    // eslint
+    "eslint.enable": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.packageManager": "yarn",
+
+    "typescript.check.npmIsInstalled": false,
+    "emmet.showExpandedAbbreviation": "never",
+
+    "editor.multiCursorModifier": "ctrlCmd",
+
+    // auto import dependencies
+    "vscode-exports-autocomplete.enable": "enable",
+    // set this to a higher value if 'on paste' is too aggressive for you
+    "vscode-exports-autocomplete.minimumWordLengthToImportOnPaste": 1,
+    // set this to false when you're annoyed by the stuff you get from your npm modules*
+    "vscode-exports-autocomplete.enableNpmDependencies": true,
+    // set this to true when you prefer spaces around curly braces
+    "vscode-exports-autocomplete.addSpacingAroundCurlyBraces": true,
+    // string to be used when indenting, default is two spaces
+    "vscode-exports-autocomplete.indentationOverride": "",
+
+    // Scans builtin modules as well
+    "node-module-intellisense.scanBuiltinModules": true,
+
+    // Scans devDependencies as well
+    "node-module-intellisense.scanDevDependencies": true,
+
+    // Scans file modules as well
+    "node-module-intellisense.scanFileModules": true,
+
+    /**
+    * Scans alternative module paths (eg. Search on ${workspcaceRoot}/lib).
+    * Useful when using packages like (https://www.npmjs.com/package/app-module-path) to manage require paths folder.
+    **/
+    "node-module-intellisense.modulePaths": [],
+
+    // File module extensions
+    "node-module-intellisense.fileModuleExtensions": [
+        ".js",
+        ".jsx",
+        ".ts",
+        ".d.ts",
+        ".tsx",
+        ".vue",
+        ".json"
+    ],
+
+    // Bracket colorizer
+    "bracketPairColorizer.forceUniqueOpeningColor": true,
+    "bracketPairColorizer.forceIterationColorCycle": true,
+
+    // Git project manager
+    "gitProjectManager.baseProjectsFolders": [
+        "/Users/jaredw/Sites/_play/react/webernote",
+        "/Users/jaredw/Sites/_play/react/playground"
+    ],
+
+    // TODO Highlight
+    "todohighlight.isEnable": true,
+    "todohighlight.isCaseSensitive": true,
+    "todohighlight.keywords": [
+        "DEBUG:",
+        "REVIEW:", {
+            "text": "NOTE:",
+            "backgroundColor": "#dafa0c",
+            "color": "#000",
+            "overviewRulerColor": "grey"
+        }, {
+            "text": "FIXME:",
+            "backgroundColor": "#ff62be",
+            "color": "#fff",
+            "isWholeLine": false
+        }, {
+            "text": "HACK:",
+            "backgroundColor": "#ffab00",
+            "color": "#000",
+            "isWholeLine": false
+        }, {
+            "text": "TODO:",
+            "backgroundColor": "rgba(0, 0, 0, 0.2)",
+            "border": "1px solid #000",
+            "color": "red",
+            //NOTE: using borderRadius along with `border` or you will see nothing change
+            "borderRadius": "2px"
+        }
+    ],
+    // highlight `TODO:`,`FIXME:` or content between parentheses
+    // "todohighlight.keywordsPattern": "TODO:|FIXME:|\\(([^)]+)\\)",
+    "todohighlight.defaultStyle": {
+        "color": "#000",
+        "backgroundColor": "#E91E63",
+        "border": "1px solid #000",
+        "borderRadius": "2px",
+        "cursor": "pointer",
+        "isWholeLine": false
+    },
+    "todohighlight.include": [
+        "**/*.js",
+        "**/*.json",
+        "**/*.html",
+        "**/*.scss"
+    ],
+    "todohighlight.exclude": [
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/dist/**",
+        "**/build/**",
+        "**/.vscode/**",
+        "**/.github/**",
+        "**/_output/**",
+        "**/*.min.*",
+        "**/*.map",
+        "**/.next/**"
+    ],
+
+    // indent rainbow
+    // Defining custom colors instead of default "Rainbow" for dark backgrounds.
+    "indentRainbow.colors": [
+        "rgba(64, 64, 16, 0.3)",
+        "rgba(32, 64, 32, 0.3)",
+        "rgba(64, 32, 64, 0.3)",
+        "rgba(16, 48, 48, 0.3)",
+        "rgba(128, 32, 32, 0.3)"
+    ],
+    // The delay in ms until the editor gets updated.
+    "indentRainbow.updateDelay": 20,
+    // The indent color if the number of spaces is not a multiple of "tabSize".
+    "indentRainbow.errorColor": "rgba(128,32,32,0.3)",
+    "indentRainbow.ignoreErrorLanguages": [
+        "markdown", "plaintext"
+    ],
+    // Example of regular expression in JSON (note double backslash to escape characters)
+    "indentRainbow.ignoreLinePatterns": [
+        "/.*\\*.*/mg", // lines begining wit *
+        "/.*\\/\\/.*/g" // lines begininning with //
+	],
+
+	"explorer.confirmDragAndDrop": false,
+
+	"workbench.colorCustomizations": {
+        "activityBarBadge.background": "#FF7042",
+        "list.activeSelectionForeground": "#FF7042",
+        "list.inactiveSelectionForeground": "#FF7042",
+        "list.highlightForeground": "#FF7042",
+        "scrollbarSlider.activeBackground": "#FF704250",
+        "editorSuggestWidget.highlightForeground": "#FF7042",
+        "textLink.foreground": "#FF7042",
+        "progressBar.background": "#FF7042",
+        "pickerGroup.foreground": "#FF7042",
+        "tab.activeBorder": "#FF7042"
+	},
+
+    "materialTheme.cache.workbench.settings": {
+        "accent": "Orange",
+        "accentPrevious": "Acid Lime",
+        "themeColours": "Darker High Contrast"
+	},
+
+    "sync.gist": "4c4c165c21db4069b58962bb95dc6910",
+    "sync.lastUpload": "2017-11-07T04:25:51.529Z",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "",
+    "sync.forceDownload": false,
+    "sync.anonymousGist": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "[shellscript]": {
+
+    }
+}
