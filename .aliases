@@ -85,8 +85,10 @@ alias has="curl -sL https://git.io/_has | bash -s"
 # find path of file
 #alias findpath="sudo find / -type d -name \$1"
 
-# list globally installed npm packages
+# list globally installed npm packages, update and list outdated
 alias npmg="npm list -g --depth=0"
+alias npmgOutdated="npm outdated -g --depth=0"
+alias npmgUpdate="npm update -g"
 
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"

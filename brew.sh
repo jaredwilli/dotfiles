@@ -179,7 +179,7 @@ brew cask install aerial
 echo "Install Dev Apps"
 brew cask install --appdir="/Applications" github
 brew cask install --appdir="/Applications" visual-studio-code
-brew cask install --appdir="/Applications" sublime-text
+# brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" cakebrew
 
 # Google
@@ -189,17 +189,22 @@ brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" chrome-devtools
 brew cask install --appdir="/Applications" google-drive
 brew cask install --appdir="/Applications" google-music-manager
+brew install caskroom/cask/google-chrome
+brew install caskroom/cask/google-hangouts
+brew install caskroom/cask/google-chrome-canary
 brew install caskroom/cask/google-photos-backup-and-sync
 
 echo "Installing some nice to have apps if I need them"
 brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" spectacle
+# brew cask install --appdir="/Applications" spectacle
 brew cask install --appdir="/Applications" cleanmymac
 brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" skype
-brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" spotify
+# brew cask install --appdir="/Applications" skype
+# brew cask install --appdir="/Applications" spotify
 brew cask install --appdir="/Applications" the-unarchiver
+
+brew install caskroom/cask/visual-studio-code
+brew install caskroom/cask/slack
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook qlvideo
