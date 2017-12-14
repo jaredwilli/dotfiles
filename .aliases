@@ -13,6 +13,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 # alias homedir="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+alias newb="!f() { ticketnum=$1; branchName=$2; git checkout -b \"POD-${ticketnum}/${branchName}\"; }; f"
 
 # Folder Path Shortcuts
 alias df="cd ~/dotfiles"
@@ -22,6 +23,9 @@ alias w="cd ~/Sites/webernote-react"
 alias com="cd ~/Sites/webernote-react/src/components"
 alias cc="cd ~/Sites/coding-challenges"
 alias play="cd ~/Sites/playground"
+alias _play="cd ~/Sites/_playground"
+alias twizlr="cd ~/Sites/_playground/twizlr"
+alias twizlr="cd ~/Sites/_playground/twizlr"
 
 alias usr="cd /usr"
 alias usrbin="cd /usr/bin"
@@ -33,17 +37,39 @@ alias vscplugins="cd $HOME/.vscode/extensions"
 alias g="git"
 alias v="vim"
 alias y="yarn"
-#yarn stuff
+
+# Git
+alias master="git checkout master"
+alias develop="git checkout develop"
+alias pullMaster="git pull origin master"
+alias pullDevelop="git pull origin develop"
+
+# npm script shortcuts
 alias install="yarn"
-alias start="yarn start"
+alias start="npm start"
+alias lint="yarn lint"
+alias lintWatch="yarn lint-watch"
 alias test="yarn test"
+alias testWatch="yarn test-watch"
+alias testwatch="yarn test:watch"
 alias coverage="yarn test --coverage"
-alias watch="yarn watch-css"
+alias coverageWatch="yarn coverage-watch"
+alias cleanSnaps="yarn test -- -u"
+alias watchcss="yarn watch-css"
+alias buildcss="yarn build-css"
 alias build="yarn build"
-#git stuff
+alias deploy="yarn deploy"
+alias deploydev="yarn deploy-dev"
+alias sg="yarn styleguide"
+alias sgd="yarn styleguide-build"
+
+alias eject="react-scripts eject" # for create react app only
+
+# Git stuff
 alias push="git push"
 alias pull="git pull"
-# random stuff
+
+# Random stuff
 alias dropbox="cd ~/Documents/Dropbox"
 alias downloads="cd ~/Downloads"
 alias desktop="cd ~/Desktop"
